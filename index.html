@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,23 +13,30 @@
 
   <title>GitFav</title>
 </head>
+
 <body>
+
   <div id="app">
+
     <header>
+      <img class="logo" src="/assets/Gitfav.svg" alt="">
+      
       <div class="search">
-        <img src="/assets/Gitfav.svg" alt="">
-        <label class="sr-only" for="input-search">Type the Github username you want to favorite</label>
+        <!-- <label class="sr-only" for="input-search">Type the Github username you want to favorite</label> -->
         <input id="input-search" type="text" placeholder="Type the Github username you want to favorite">
         <button><img src="/assets/Button.png" alt=""></button>
       </div>
     </header>
+
     <table>
-      <thead>
+
+      <thead class="tableHeader">
         <th>User</th>
         <th>Repositories</th>
         <th>Followers</th>
         <th>Action</th>
       </thead>
+
       <tbody>
         <tr>
           <td class="tableUser">
@@ -60,12 +68,13 @@
           </td>
         </tr>
 
-
-
       </tbody>
+
       <tfoot></tfoot>
+
     </table>
-    
+
   </div>
 </body>
+
 </html>

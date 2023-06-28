@@ -10,22 +10,52 @@
   <div id="app">
     <header>
       <img src="/assets/Gitfav.svg" alt="">
-      <button><img src="/assets/Button.png" alt=""></button>
+      <div class="search">
+        <label class="sr-only" for="input-search">Type the Github username you want to favorite</label>
+        <input id="input-search" type="text" placeholder="Type the Github username you want to favorite">
+        <button><img src="/assets/Button.png" alt=""></button>
+      </div>
     </header>
     <table>
       <thead>
-        <td>User</td>
-        <td>Repositories</td>
-        <td>Followers</td>
-        <td>Action</td>
+        <th>User</th>
+        <th>Repositories</th>
+        <th>Followers</th>
+        <th>Action</th>
       </thead>
       <tbody>
-        <td>maykBrito</td>
-        <td>123</td>
-        <td>1234</td>
-        <td>
-          <button class="removeUser">Remove</button>
-        </td>
+        <tr>
+          <td>
+            <img src="https://github.com/fabianolxs.png" alt="">
+            <a href="https://github.com/fabianolxs">
+              <p>Fabiano Xavier</p>
+              <span>/fabianolxs</span>
+            </a>
+          </td>
+          <td class="repositories">123</td>
+          <td class="followers">1234</td>
+          <td>
+            <button class="removeUser">Remove</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="https://github.com/diego3g.png" alt="">
+            <a href="https://github.com/diego3g">
+              <p>Diego Fernandes</p>
+              <span>/diego3g</span>
+            </a>
+          </td>
+          <td class="repositories">48</td>
+          <td class="followers">22503</td>
+          <td>
+            <button class="removeUser">Remove</button>
+          </td>
+        </tr>
+
+
+
       </tbody>
       <tfoot></tfoot>
     </table>

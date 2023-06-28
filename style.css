@@ -8,8 +8,31 @@
   font-size: 62.5%;
   background-color: #2F2F33;
   --txt-color: #E1E1E6;
+  --txt-remove: #F75A68;
+  font-family: 'Roboto', sans-serif;
   color: var(--txt-color);
+}
 
+
+
+body {
+ 
+}
+
+
+//Homepage header properties
+.search img:nth-child(1){
+  margin-right: auto;
+}
+
+input {
+  background: #06181C;
+  color: #7C7C8A;
+}
+
+.search{
+  display: flex;
+  gap: .8rem;
 }
 
 .sr-only {
@@ -24,28 +47,10 @@
   border-width: 0;
 }
 
-body {
-  display: flex;
-}
-header {
-  display: flex;
-  gap: 29.4rem;
-  max-height: 2rem;
-}
 
-.search{
-  display: flex;
-  gap: .8rem;
-}
-
-input {
-  background: #06181C;
-  color: #7C7C8A;
-}
-
+//Table proiperties
 theader {
-  background: #043444;
-  
+  background: #043444; 
 }
 
 table tr:nth-child(even) {
@@ -54,4 +59,33 @@ table tr:nth-child(even) {
 
 table tr:nth-child(odd) {
   background: rgba(6, 22, 27, 0.5);
+}
+
+tbody img {
+  border-radius: 50%;
+  max-height: 5.6rem;
+}
+
+.tableUser {
+  display: flex;
+  flex-direction: row;
+}
+
+.removeUser{
+  background: none;
+  border: none;
+  color: var(--txt-remove);
+  font-weight: 700;
+}
+
+#app{
+  display: flex;
+  flex-direction: column;
+  max-width: 112rem;
+  max-height: 69rem;
+  margin: auto;
+}
+
+td {
+  margin-left: 4rem;
 }

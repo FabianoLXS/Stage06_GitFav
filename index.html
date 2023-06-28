@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <title>GitFav</title>
 </head>
 <body>
   <div id="app">
     <header>
-      <img src="/assets/Gitfav.svg" alt="">
       <div class="search">
+        <img src="/assets/Gitfav.svg" alt="">
         <label class="sr-only" for="input-search">Type the Github username you want to favorite</label>
         <input id="input-search" type="text" placeholder="Type the Github username you want to favorite">
         <button><img src="/assets/Button.png" alt=""></button>
@@ -25,7 +31,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>
+          <td class="tableUser">
             <img src="https://github.com/fabianolxs.png" alt="">
             <a href="https://github.com/fabianolxs">
               <p>Fabiano Xavier</p>
@@ -40,7 +46,7 @@
         </tr>
 
         <tr>
-          <td>
+          <td class="tableUser">
             <img src="https://github.com/diego3g.png" alt="">
             <a href="https://github.com/diego3g">
               <p>Diego Fernandes</p>

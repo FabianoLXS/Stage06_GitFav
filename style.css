@@ -25,6 +25,10 @@ body {
   font-size: var(--fs-app);
 }
 
+#app {
+display: flex;
+flex-direction: column;
+}
 
 header {
   display: flex;
@@ -108,4 +112,14 @@ table tr:nth-child(odd) {
 .removeUser {
   color: var(--txt-remove);
   font-weight: 700;
+}
+
+.noRegister{
+  background: var(--bg-odd);
+  width: 100%;
+  border-radius: 0 0 12px 12px; 
+}
+
+.hide {
+  display: none;
 }

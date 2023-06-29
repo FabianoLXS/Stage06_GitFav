@@ -68,74 +68,38 @@ button {
   background: none;
 }
 
-
-
-
-/* 
-//Homepage header properties
-.search img:nth-child(1){
-  margin-right: auto;
-}
-
-.search{
-  display: flex;
-  gap: .8rem;
-  margin: 10.7rem auto 9.5rem;
-  
-}
-
-.search img {
-  margin-right: 29.4rem;
-}
-
-.search button {
-  
-}
-
-
-
-
-//Table proiperties
-
-table tr:first-child() {
-  background: #043444; 
+thead {
+  background: #092D38;
 }
 
 table tr:nth-child(even) {
-  background: var(--bg-even);
+  background: #06181C;
 }
 
 table tr:nth-child(odd) {
-  background: var(--bg-odd);
+  background: rgba(6, 22, 27, 0.50);
 }
-
-tbody img {
-  border-radius: 50%;
-  max-height: 5.6rem;
-}
-
-td {
-  padding: 2.4rem 2.4rem 2.4rem 4rem;
-}
-
 
 .tableUser {
   display: flex;
-  flex-direction: row;
 }
 
-.removeUser{
-  background: none;
-  border: none;
-  color: var(--txt-remove);
+.tableUser a, p {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+.tableUser p {
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.tableUser img {
+  border-radius: 50%;
+  max-width: 4.8rem;
+}
+
+.removeUser {
+  color: #F75A68;
   font-weight: 700;
 }
-
-#app{
-  display: flex;
-  flex-direction: column;
-  max-width: 112rem;
-  max-height: 69rem;
-  margin: auto;
-  flex-wrap: wrap;
-} */

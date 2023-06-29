@@ -10,6 +10,7 @@
   --txt-color: #E1E1E6;
   --txt-remove: #F75A68;
   --fs-app: 20px;
+  --bg-tableHead: #092D38;
   --bg-even: #06181C;
   --bg-odd: rgba(6, 22, 27, .50);
   font-family: 'Roboto', sans-serif;
@@ -48,7 +49,7 @@ header {
 }
 
 #input-search {
-  background: #06181C;
+  background: var(--bg-even);
   color: #7C7C8A;
   min-width: 43rem;
 }
@@ -60,7 +61,7 @@ header {
 }
 
 .search button {
-  max-height: 48px; 
+  max-height: 4.8rem; 
 }
 
 button {
@@ -69,27 +70,31 @@ button {
 }
 
 thead {
-  background: #092D38;
+  background: var(--bg-tableHead);
 }
 
 table tr:nth-child(even) {
-  background: #06181C;
+  background: var(--bg-even);
 }
 
 table tr:nth-child(odd) {
-  background: rgba(6, 22, 27, 0.50);
+  background: var(--bg-odd);
 }
 
 .tableUser {
   display: flex;
 }
 
-.tableUser a, p {
+.tableUser a {
   text-decoration: none;
   color: var(--txt-color);
 }
 
 .tableUser p {
+  font-weight: 700;
+}
+
+.tableUser span {
   font-weight: 400;
   line-height: 160%;
 }
@@ -97,9 +102,10 @@ table tr:nth-child(odd) {
 .tableUser img {
   border-radius: 50%;
   max-width: 4.8rem;
+  max-height: 4.8rem;
 }
 
 .removeUser {
-  color: #F75A68;
+  color: var(--txt-remove);
   font-weight: 700;
 }

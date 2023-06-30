@@ -28,6 +28,8 @@ body {
 #app {
 display: flex;
 flex-direction: column;
+align-items: stretch;
+min-width: 160rem;
 }
 
 header {
@@ -85,6 +87,14 @@ table tr:nth-child(odd) {
   background: var(--bg-odd);
 }
 
+table th, td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+table th {
+  text-align: inherit;
+}
+
 .tableUser {
   display: flex;
 }
@@ -112,6 +122,7 @@ table tr:nth-child(odd) {
 .removeUser {
   color: var(--txt-remove);
   font-weight: 700;
+  font-size: 20px;
 }
 
 .noRegister{

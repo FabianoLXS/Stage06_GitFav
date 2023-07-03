@@ -22,16 +22,17 @@
 body {
   display: flex;  
   justify-content: center;
-  min-width: 112rem;
+  min-width: 122rem;
   background: var(--bg-body);
   height: 100vh;
   font-size: var(--fs-app);
 }
 
 #app {
-display: flex;
-flex-direction: column;
-align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 122rem;
 }
 
 header {
@@ -81,8 +82,21 @@ button {
   background: none;
 }
 
+table {
+  border: 1px solid #4A808C;
+  border-radius: 12px;
+}
+
+
+
 thead {
   background: var(--bg-tableHead);
+}
+
+tbody {
+  /* display: block; */
+  max-height: 50rem;
+  overflow: auto;
 }
 
 table tr:nth-child(even) {

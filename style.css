@@ -87,6 +87,10 @@ table {
   border-radius: 12px;
 }
 
+table tr {
+  border-collapse: collapse;
+  border: 1px solid #4A808C;
+}
 
 
 thead {

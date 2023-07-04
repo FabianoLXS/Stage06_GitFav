@@ -119,25 +119,25 @@ table th {
   text-align: inherit;
 }
 
-.tableUser {
+.user {
   display: flex;
 }
 
-.tableUser a {
+.user a {
   text-decoration: none;
   color: var(--txt-color);
 }
 
-.tableUser p {
+.user p {
   font-weight: 700;
 }
 
-.tableUser span {
+.user span {
   font-weight: 400;
   line-height: 160%;
 }
 
-.tableUser img {
+.user img {
   border-radius: 50%;
   max-width: 4.8rem;
   max-height: 4.8rem;
@@ -147,6 +147,7 @@ table th {
   color: var(--txt-remove);
   font-weight: 700;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .noRegister{

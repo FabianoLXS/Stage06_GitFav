@@ -1,5 +1,6 @@
 import { GithubUser } from "./GithubUser.js"
 
+
 export class Favorites {
   constructor(root) {
     this.root = document.querySelector(root)
@@ -68,6 +69,8 @@ export class FavoritesView extends Favorites {
   }
 
   update() {
+
+    this.emptyState()
     this.removeAllTr()
 
     this.entries.forEach((user) => {
@@ -100,14 +103,14 @@ export class FavoritesView extends Favorites {
     const content = `
     
           <td class="user">
-            <img src="https://github.com/fabianolxs.png" alt="">
-            <a href="https://github.com/fabianolxs">
-              <p>Fabiano Xavier</p>
-              <span>/fabianolxs</span>
+            <img src="" alt="">
+            <a href="">
+              <p></p>
+              <span></span>
             </a>
           </td>
-          <td class="repositories">123</td>
-          <td class="followers">1234</td>
+          <td class="repositories"></td>
+          <td class="followers"></td>
           <td>
             <button class="removeUser">Remove</button>
           </td>
@@ -124,4 +127,14 @@ export class FavoritesView extends Favorites {
       tr.remove()
     })
   }
+
+  emptyState(){
+    if (this.entries.length === 0) {
+      this.root.querySelector('.empty-state').classList.remove('hide')
+    } else {
+      this.root.querySelector('.empty-state').classList.add('hide')
+    }
+  }
+
+
 }

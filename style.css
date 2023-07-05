@@ -47,8 +47,12 @@ body * {
 }
 
 #app {
+    display: flex;
+    flex-direction: column;
     max-width: 112rem;
-    margin: 11.5rem 16rem 11.6rem;
+    margin-left: 26rem;
+    margin-top: 11.5rem;
+    /* margin: 11.5rem 16rem 11.6rem; */
 }
 
 header {
@@ -109,12 +113,12 @@ header {
     background-color: #FFFFFF;
     color: var(--dark-blue);
 
-    transition: all .7s ease;
+    transition: all .2s ease;
 }
 
 .search button:hover svg path {
     fill: var(--dark-blue);
-    transition: all .7s ease;
+    transition: all .2s ease;
 }
 
 .table {
@@ -196,7 +200,7 @@ td.user a p {
     font-weight: bold;
 }
 
-td .remove {
+.removeUser {
     background: none;
     border: none;
 
@@ -204,6 +208,8 @@ td .remove {
 
     display: flex;
     margin-inline: auto;
+    color: #F75A68;
+    font-weight: 700;
 }
 
 .empty-state {
@@ -219,7 +225,7 @@ td .remove {
     justify-content: center;
     gap: 6rem;
 
-    margin: 21rem auto 28.7rem;
+    margin: 22rem auto;
 }
 
 .no-favs svg {

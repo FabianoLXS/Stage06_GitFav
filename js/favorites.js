@@ -112,7 +112,7 @@ export class FavoritesView extends Favorites {
           <td class="repositories"></td>
           <td class="followers"></td>
           <td>
-            <button class="removeUser">Remove</button>
+            <button class="removeUser">Remover</button>
           </td>
         
     `

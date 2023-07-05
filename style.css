@@ -83,14 +83,13 @@ button {
 }
 
 table {
-  border: 1px solid #4A808C;
+  border: 2px solid #4A808C;
   border-radius: 12px;
 }
 
-table tr {
+/* table tr {
   border-collapse: collapse;
-  border: 1px solid #4A808C;
-}
+} */
 
 
 thead {
@@ -119,8 +118,13 @@ table th {
   text-align: inherit;
 }
 
+table td {
+  font-weight: 700;
+}
+
 .user {
   display: flex;
+  gap: 1.6rem;
 }
 
 .user a {
